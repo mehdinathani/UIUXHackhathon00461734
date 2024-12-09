@@ -2,7 +2,9 @@
 
 import FeaturedProducts from "./components/FeatureProduct";
 import HeroSection from "./components/HeroSection";
+import LatestProducts from "./components/LatestProducts";
 import Navbar from "./components/Navbar";
+import ShopexOffer from "./components/offer";
 import TopHeader from "./components/top_header";
 
 
@@ -17,6 +19,8 @@ export default function Home() {
 
       <HeroSection />
       <FeaturedProducts />
+      <LatestProducts />
+      <ShopexOffer />
 
       {/* Sections Placeholder */}
       <main>

@@ -1,13 +1,13 @@
 import Image from "next/image";
 import heroImage from "@/app/assets/sofa promotional header.png"
-import leftImage from "@/app/assets/image 32.png"
+import leftImage from "@/app/assets/leftHero.png"
 
 export default function HeroSection() {
     return (
-        <div className="w-full h-[764px] flex justify-between items-center px-8 border border-accent">
+        <div className="w-full h-[764px] bg-[#F2F0FF] flex justify-between items-center px-8 border border-accent">
 
             {/* Left Image */}
-            <div className="w-[387px] h-[387px]">
+            <div className="w-[387px] h-[387px] align-top">
                 <Image src={leftImage} alt="Left Image" className="w-full h-full object-cover" />
             </div>
 
