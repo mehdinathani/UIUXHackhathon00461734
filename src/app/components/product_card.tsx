@@ -1,8 +1,8 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 
-// Define props type for ProductCard
+// Define props type
 type ProductCardProps = {
-    image: StaticImageData | string; // Explicit union type
+    image: string;  // Single type: external URL
     title: string;
     price: number | string;
     oldPrice?: number | string; // Optional prop
