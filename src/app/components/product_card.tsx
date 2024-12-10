@@ -1,14 +1,12 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-// Define props type
 type ProductCardProps = {
-    image: string;  // Single type: external URL
+    image: string | StaticImageData;  // Supports both types
     title: string;
     price: number | string;
-    oldPrice?: number | string; // Optional prop
+    oldPrice?: number | string;  // Optional
 };
 
-// Typed function component
 function ProductCard({ image, title, price, oldPrice }: ProductCardProps) {
     return (
         <div className="w-[370px] h-[314px] bg-white shadow-lg rounded-lg overflow-hidden mx-auto">
