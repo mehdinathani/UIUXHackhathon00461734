@@ -1,6 +1,13 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-function ProductCard({ image, title, code, price }) {
+type ProductCardProps = {
+    image: StaticImageData | string;  // Supports both static imports and URLs
+    title: string;
+    code: string;
+    price: number | string;  // Allows flexibility
+};
+
+function ProductCard({ image, title, code, price }: ProductCardProps) {
     return (
         <div className="w-[270px] h-[361px] bg-white shadow-lg rounded-lg overflow-hidden m-[1px]">
             <div className="w-full h-[236px] bg-[#F6F7FB]">
