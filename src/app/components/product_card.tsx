@@ -6,8 +6,9 @@ type ProductCardProps = {
     image: StaticImageData;
     title: string;
     price: string;
-    oldPrice: string;
+    oldPrice?: string; // Optional
 };
+
 
 // Product Card Component
 function ProductCard({ image, title, price, oldPrice }: ProductCardProps) {
