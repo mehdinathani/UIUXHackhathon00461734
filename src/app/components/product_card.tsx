@@ -1,23 +1,26 @@
 import Image, { StaticImageData } from "next/image";
 
+// Define props type for ProductCard
 type ProductCardProps = {
-    image: StaticImageData;  // Supports both static imports and URLs
+    image: StaticImageData | string;
     title: string;
-    code: string;
-    price: number | string;  // Allows flexibility
+    price: number | string;
+    oldPrice?: number | string;  // Optional prop
 };
 
-function ProductCard({ image, title, code, price }: ProductCardProps) {
+// Correctly type the ProductCard props
+function ProductCard({ image, title, price, oldPrice }: ProductCardProps) {
     return (
-        <div className="w-[270px] h-[361px] bg-white shadow-lg rounded-lg overflow-hidden m-[1px]">
-            <div className="w-full h-[236px] bg-[#F6F7FB]">
-                <Image src={image} alt={title} className="w-full h-full object-cover" />
+        <div className="w-[370px] h-[314px] bg-white shadow-lg rounded-lg overflow-hidden mx-auto">
+            <div className="w-full h-[236px] bg-[#F6F7FB] flex items-center justify-center">
+                <Image src={image} alt={title} className="w-[200px] h-[200px] object-contain" />
             </div>
-            <div className="p-4 text-left">
-                <h3 className="text-lg font-bold text-[#FB2E86]">{title}</h3>
-                <div className="w-[52px] h-[4px] bg-[#FB2E86] rounded-full my-2"></div>
-                <p className="text-sm text-[#151875]">Code - {code}</p>
+            <div className="p-4 text-center">
+                <h3 className="text-lg font-bold text-[#151875]">{title}</h3>
                 <p className="text-lg font-bold text-[#FB2E86]">${price}</p>
+                {oldPrice && (
+                    <p className="text-sm line-through text-[#ACABC3]">${oldPrice}</p>
+                )}
             </div>
         </div>
     );
