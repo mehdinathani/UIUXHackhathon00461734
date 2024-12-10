@@ -7,6 +7,7 @@ import LatestProducts from "./components/LatestProducts";
 import Navbar from "./components/Navbar";
 import ShopexOffer from "./components/offer";
 import TopHeader from "./components/top_header";
+import TrendingProducts from "./components/trending_products";
 
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <LatestProducts />
       <ShopexOffer />
       <FeaturedSection />
+      <TrendingProducts />
 
       {/* Sections Placeholder */}
       <main>
