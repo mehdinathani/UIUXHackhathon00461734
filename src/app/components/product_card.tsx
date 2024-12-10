@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 
 type ProductCardProps = {
-    image: StaticImageData | string;  // Supports both static imports and URLs
+    image: StaticImageData;  // Supports both static imports and URLs
     title: string;
     code: string;
     price: number | string;  // Allows flexibility
