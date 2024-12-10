@@ -1,5 +1,6 @@
 // app/page.tsx
 
+import FeaturedSection from "./components/featured_section";
 import FeaturedProducts from "./components/FeatureProduct";
 import HeroSection from "./components/HeroSection";
 import LatestProducts from "./components/LatestProducts";
@@ -21,6 +22,7 @@ export default function Home() {
       <FeaturedProducts />
       <LatestProducts />
       <ShopexOffer />
+      <FeaturedSection />
 
       {/* Sections Placeholder */}
       <main>
