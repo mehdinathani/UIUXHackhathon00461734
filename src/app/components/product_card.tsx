@@ -1,13 +1,16 @@
+// FeatureProduct.tsx
 import Image, { StaticImageData } from "next/image";
 
+// Define Props Type
 type ProductCardProps = {
-    image: string | StaticImageData;  // Supports both types
+    image: StaticImageData;  // Use only StaticImageData
     title: string;
-    price: number | string;
-    oldPrice?: number | string;  // Optional
+    code: string;
+    price: string;
 };
 
-function ProductCard({ image, title, price, oldPrice }: ProductCardProps) {
+// Product Card Component
+function ProductCard({ image, title, code, price }: ProductCardProps) {
     return (
         <div className="w-[370px] h-[314px] bg-white shadow-lg rounded-lg overflow-hidden mx-auto">
             <div className="w-full h-[236px] bg-[#F6F7FB] flex items-center justify-center">
@@ -21,10 +24,8 @@ function ProductCard({ image, title, price, oldPrice }: ProductCardProps) {
             </div>
             <div className="p-4 text-center">
                 <h3 className="text-lg font-bold text-[#151875]">{title}</h3>
+                <p className="text-sm text-[#ACABC3]">Code - {code}</p>
                 <p className="text-lg font-bold text-[#FB2E86]">${price}</p>
-                {oldPrice && (
-                    <p className="text-sm line-through text-[#ACABC3]">${oldPrice}</p>
-                )}
             </div>
         </div>
     );
