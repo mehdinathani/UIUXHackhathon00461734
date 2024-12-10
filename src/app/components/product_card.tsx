@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 
 type ProductCardProps = {
     image: string;  // Supports both static imports and URLs
