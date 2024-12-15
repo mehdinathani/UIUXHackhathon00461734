@@ -1,13 +1,19 @@
 // app/page.tsx
 
+import Image from "next/image";
+import DiscountItem from "./components/discount_items";
 import FeaturedSection from "./components/featured_section";
 import FeaturedProducts from "./components/FeatureProduct";
 import HeroSection from "./components/HeroSection";
 import LatestProducts from "./components/LatestProducts";
 import Navbar from "./components/Navbar";
 import ShopexOffer from "./components/offer";
+import SubscribeSection from "./components/subscribe";
+import TopCategories from "./components/top_categories";
 import TopHeader from "./components/top_header";
 import TrendingProducts from "./components/trending_products";
+import sponserImage from "@/app/assets/sponserimage.png";
+
 
 
 export default function Home() {
@@ -25,6 +31,18 @@ export default function Home() {
       <ShopexOffer />
       <FeaturedSection />
       <TrendingProducts />
+      <DiscountItem />
+      <TopCategories />
+      <SubscribeSection />
+      <div className="w-auto justify-center items-center mx-8">
+
+        <Image className=""
+          src={sponserImage}
+          alt="sponser image"
+          width={1000}
+        />
+      </div>
+
 
       {/* Sections Placeholder */}
       <main>

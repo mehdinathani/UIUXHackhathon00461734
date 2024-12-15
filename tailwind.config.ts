@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        myFont: ['JosefinSans'],
+        myFont2: ['GeistMono'],
+        myFont3: ['GeistSans'],
+
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
