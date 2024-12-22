@@ -1,4 +1,4 @@
-// components/Navbar.tsx
+import Link from "next/link";
 
 export default function Navbar() {
     return (
@@ -6,11 +6,21 @@ export default function Navbar() {
             <div className="text-2xl font-bold">Hekto</div>
 
             <ul className="flex space-x-6">
-                <li className="hover:text-[#FB2E86] cursor-pointer">Home</li>
-                <li className="hover:text-[#FB2E86] cursor-pointer">Products</li>
-                <li className="hover:text-[#FB2E86] cursor-pointer">Pages</li>
-                <li className="hover:text-[#FB2E86] cursor-pointer">Shop</li>
-                <li className="hover:text-[#FB2E86] cursor-pointer">Contact</li>
+                <li className="hover:text-[#FB2E86] cursor-pointer">
+                    <Link href="/">Home</Link>
+                </li>
+                <li className="hover:text-[#FB2E86] cursor-pointer">
+                    <Link href="/products">Products</Link>
+                </li>
+                <li className="hover:text-[#FB2E86] cursor-pointer">
+                    <Link href="/pages">Pages</Link>
+                </li>
+                <li className="hover:text-[#FB2E86] cursor-pointer">
+                    <Link href="/shop">Shop</Link>
+                </li>
+                <li className="hover:text-[#FB2E86] cursor-pointer">
+                    <Link href="/contact">Contact</Link>
+                </li>
             </ul>
 
             <input

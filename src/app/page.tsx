@@ -6,16 +6,12 @@ import FeaturedSection from "./components/featured_section";
 import FeaturedProducts from "./components/FeatureProduct";
 import HeroSection from "./components/HeroSection";
 import LatestProducts from "./components/LatestProducts";
-import Navbar from "./components/Navbar";
 import ShopexOffer from "./components/offer";
 import SubscribeSection from "./components/subscribe";
 import TopCategories from "./components/top_categories";
-import TopHeader from "./components/top_header";
 import TrendingProducts from "./components/trending_products";
 import sponserImage from "@/app/assets/sponserimage.png";
 import LatestBlogSection from "./components/LatestBlogSection";
-import Footer from "./components/Footer";
-import ExtremeFooter from "./components/extreme_footer";
 
 
 
