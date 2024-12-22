@@ -13,17 +13,16 @@ import TopCategories from "./components/top_categories";
 import TopHeader from "./components/top_header";
 import TrendingProducts from "./components/trending_products";
 import sponserImage from "@/app/assets/sponserimage.png";
+import LatestBlogSection from "./components/LatestBlogSection";
+import Footer from "./components/Footer";
+import ExtremeFooter from "./components/extreme_footer";
 
 
 
 export default function Home() {
   return (
     <div>
-      {/* Top Header */}
-      <TopHeader />
 
-      {/* Navbar */}
-      <Navbar />
 
       <HeroSection />
       <FeaturedProducts />
@@ -34,6 +33,7 @@ export default function Home() {
       <DiscountItem />
       <TopCategories />
       <SubscribeSection />
+
       <div className="w-auto justify-center items-center mx-8">
 
         <Image className=""
@@ -42,6 +42,7 @@ export default function Home() {
           width={1000}
         />
       </div>
+      <LatestBlogSection />
 
 
       {/* Sections Placeholder */}

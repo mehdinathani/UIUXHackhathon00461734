@@ -6,11 +6,11 @@ export default function Navbar() {
             <div className="text-2xl font-bold">Hekto</div>
 
             <ul className="flex space-x-6">
-                <li className="hover:text-[#FB2E86]">Home</li>
-                <li className="hover:text-[#FB2E86]">Products</li>
-                <li className="hover:text-[#FB2E86]">Pages</li>
-                <li className="hover:text-[#FB2E86]">Shop</li>
-                <li className="hover:text-[#FB2E86]">Contact</li>
+                <li className="hover:text-[#FB2E86] cursor-pointer">Home</li>
+                <li className="hover:text-[#FB2E86] cursor-pointer">Products</li>
+                <li className="hover:text-[#FB2E86] cursor-pointer">Pages</li>
+                <li className="hover:text-[#FB2E86] cursor-pointer">Shop</li>
+                <li className="hover:text-[#FB2E86] cursor-pointer">Contact</li>
             </ul>
 
             <input

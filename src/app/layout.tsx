@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import TopHeader from "./components/top_header";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import ExtremeFooter from "./components/extreme_footer";
+config.autoAddCss = false;
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -34,7 +41,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${josefinSans.variable} antialiased`}
       >
+        {/* Top Header */}
+        <TopHeader />
+
+        {/* Navbar */}
+        <Navbar />
         {children}
+        <Footer />
+        <ExtremeFooter />
       </body>
     </html>
   );
