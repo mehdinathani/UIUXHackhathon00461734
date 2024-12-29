@@ -13,12 +13,12 @@ const products = [
 
 export default function FeaturedProducts() {
     return (
-        <div className="w-full py-16 bg-[#F6F7FB]">
+        <div className="w-full py-16 px-[416px] bg-[#F6F7FB] px-[378px]">
             <div className="text-left mb-8 mx-8">
                 <h2 className="text-4xl text-center font-extrabold text-[#1A0B5B]">Featured Products</h2>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-[16px]">
+            <div className="flex flex-row justify-center gap-[16px]">
                 {products.map((product, index) => (
                     <ProductCard key={index} {...product} />
                 ))}

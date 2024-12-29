@@ -1,6 +1,3 @@
-// app/page.tsx
-
-import Image from "next/image";
 import DiscountItem from "./components/discount_items";
 import FeaturedSection from "./components/featured_section";
 import FeaturedProducts from "./components/FeatureProduct";
@@ -10,55 +7,45 @@ import ShopexOffer from "./components/offer";
 import SubscribeSection from "./components/subscribe";
 import TopCategories from "./components/top_categories";
 import TrendingProducts from "./components/trending_products";
-import sponserImage from "@/app/assets/sponserimage.png";
 import LatestBlogSection from "./components/LatestBlogSection";
-
-
 
 export default function Home() {
   return (
-    <div>
-
-
+    <main className="bg-gray-50 mx-auto ">
+      {/* Hero Section */}
       <HeroSection />
+
+      {/* Featured Products */}
       <FeaturedProducts />
+
+      {/* Latest Products */}
       <LatestProducts />
+
+      {/* Shopex Offer */}
       <ShopexOffer />
+
+      {/* Unique Features */}
       <FeaturedSection />
+
+      {/* Trending Products */}
       <TrendingProducts />
+
+      {/* Discount Item */}
       <DiscountItem />
+
+      {/* Top Categories */}
       <TopCategories />
+
+      {/* Subscribe Section */}
       <SubscribeSection />
 
-      <div className="w-auto justify-center items-center mx-8">
-
-        <Image className=""
-          src={sponserImage}
-          alt="sponser image"
-          width={1000}
-        />
-      </div>
+      {/* Latest Blog Section */}
       <LatestBlogSection />
 
-
-      {/* Sections Placeholder */}
-      <main>
-        <section id="hero-section">{/* Hero Section */}</section>
-        <section id="feature-product">{/* Feature Product */}</section>
-        <section id="latest-products">{/* Latest Products */}</section>
-        <section id="shopex-offer">{/* What Shopex Offer! */}</section>
-        <section id="unique-features">
-          {/* Unique Features Of Latest & Trending Products */}
-        </section>
-        <section id="trending-products">{/* Trending Products */}</section>
-        <section id="discount-item">{/* Discount Item */}</section>
-        <section id="top-categories">{/* Top Categories */}</section>
-        <section id="subscribe">{/* Subscribe Section */}</section>
-        <section id="latest-blog">{/* Latest Blog */}</section>
-      </main>
-
       {/* Footer */}
-      <footer>{/* Footer Section */}</footer>
-    </div>
+      <footer className="bg-gray-900 text-white p-6 text-center">
+        <p>© {new Date().getFullYear()} Your Company. All Rights Reserved.</p>
+      </footer>
+    </main>
   );
 }

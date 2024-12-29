@@ -8,6 +8,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ExtremeFooter from "./components/extreme_footer";
 config.autoAddCss = false;
+import Image from "next/image";
+import sponserImage from "@/app/assets/sponserimage.png";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -47,6 +49,14 @@ export default function RootLayout({
         {/* Navbar */}
         <Navbar />
         {children}
+        <div className="w-auto justify-center items-center mx-8">
+
+          <Image className=""
+            src={sponserImage}
+            alt="sponser image"
+            width={1000}
+          />
+        </div>
         <Footer />
         <ExtremeFooter />
       </body>
