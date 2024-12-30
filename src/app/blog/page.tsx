@@ -1,6 +1,6 @@
 import listViewIcon from "@/app/assets/list_view_icon.png";
 import tileViewIcon from "@/app/assets/tile_view_icon.png";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 
 export default function ProductsPageList() {
 
