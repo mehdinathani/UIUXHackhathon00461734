@@ -81,14 +81,14 @@ export default function ProductsPageList() {
     );
 }
 
-interface ProductsPageListProps {
-    image: StaticImageData;
-    title: string;
-    price: number;
-    discountedAmount: number;
-    rating: number;
-    reviews: number;
-}
+// interface ProductsPageListProps {
+//     image: StaticImageData;
+//     title: string;
+//     price: number;
+//     discountedAmount: number;
+//     rating: number;
+//     reviews: number;
+// }
 
 // // function ProductListCard({
 // //     image,
