@@ -3,7 +3,6 @@
 import Image from "next/image";
 import env from "@/app/assets/uil_envelope-alt.png";
 import downIcon from "@/app/assets/down_arrow.png";
-import cartIcon from "@/app/assets/cart_icon.png";
 import heartIcon from "@/app/assets/heart_icon.png";
 import userIcon from "@/app/assets/user_icon.png";
 

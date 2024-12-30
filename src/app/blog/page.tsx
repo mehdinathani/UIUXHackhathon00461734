@@ -90,32 +90,32 @@ interface ProductsPageListProps {
     reviews: number;
 }
 
-function ProductListCard({
-    image,
-    title,
-    price,
-    discountedAmount,
-    rating,
-    reviews,
-}: ProductsPageListProps) {
-    return (
-        <div className="bg-white shadow-md rounded-md flex flex-col items-center justify-center p-6">
-            <Image src={image} alt={title} width={200} height={200} />
-            <h3 className="text-lg font-bold text-[#151875] mt-4">{title}</h3>
-            <p className="text-[#151875] mt-2">
-                <span className="font-bold">${price}</span>{" "}
-                <span className="text-[#8A8FB9] line-through">${discountedAmount}</span>
-            </p>
-            <div className="flex items-center mt-2">
-                <p className="text-[#151875] font-bold">Rating: {rating}</p>
-                <p className="text-[#8A8FB9] ml-2">{reviews} reviews</p>
-            </div>
-            <button className="bg-[#151875] text-white px-4 py-2 mt-4 rounded-md">
-                Add to Cart
-            </button>
-        </div>
-    );
-}
+// // function ProductListCard({
+// //     image,
+// //     title,
+// //     price,
+// //     discountedAmount,
+// //     rating,
+// //     reviews,
+// // }: ProductsPageListProps) {
+// //     return (
+// //         <div className="bg-white shadow-md rounded-md flex flex-col items-center justify-center p-6">
+// //             <Image src={image} alt={title} width={200} height={200} />
+// //             <h3 className="text-lg font-bold text-[#151875] mt-4">{title}</h3>
+// //             <p className="text-[#151875] mt-2">
+// //                 <span className="font-bold">${price}</span>{" "}
+// //                 <span className="text-[#8A8FB9] line-through">${discountedAmount}</span>
+// //             </p>
+// //             <div className="flex items-center mt-2">
+// //                 <p className="text-[#151875] font-bold">Rating: {rating}</p>
+// //                 <p className="text-[#8A8FB9] ml-2">{reviews} reviews</p>
+// //             </div>
+// //             <button className="bg-[#151875] text-white px-4 py-2 mt-4 rounded-md">
+// //                 Add to Cart
+// //             </button>
+// //         </div>
+// //     );
+// }
 
 
 

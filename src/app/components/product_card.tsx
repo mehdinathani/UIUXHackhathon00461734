@@ -13,7 +13,7 @@ type ProductCardProps = {
 
 
 // Product Card Component
-function ProductCard({ image, title, price, oldPrice, code }: ProductCardProps) {
+function ProductCard({ image, title, price, code }: ProductCardProps) {
     return (
         <div className="w-[270px] h-[361px] bg-white shadow-lg rounded-lg mx-auto">
             <div className=" w-[270px] h-[236px] bg-[#F6F7FB] flex items-center justify-center">
